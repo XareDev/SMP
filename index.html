@@ -6,6 +6,8 @@
     <title>Spongymedbrain | Accueil</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/spongymedbrain-logo.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
     
 </head>
 <body>
@@ -15,16 +17,14 @@
                 <img src="images/spongymedbrain-logo.png" alt="spongmedbrain club logo">
             </a>
 
+            <div class="random">
+                
+            </div>
+
             <ul id="nav-items">
 
                 <li class="nav-item">
                     <a href="">Accueil</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="">
-                        À Propos
-                    </a>
                 </li>
 
                 <li class="nav-item">
@@ -41,7 +41,19 @@
                 </li>
 
             </ul>
-            <button> </button>
+            <button id="nav-cta-btn">s'inscrire maintenant</button>
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Accueil</a>
+                <a href="#">Notre Blog</a>
+                <a href="#">E-Learning</a>
+                <a href="#">s'inscrire</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+              </div>
         </nav>
     </header>
 
@@ -54,29 +66,36 @@
             <div class="sec-txt-cont">
                 <h1 class="sec-header">Bienvenue a <br> Spongymedbrain !</h1>
                 <p>Là où la prochaine génération de <br> médecins sont former !</p>
-                <button class="arrow-btn odd-btn">
-                    >>
-                </button>
+                <a href="#sec-2">
+                    <button class="arrow-btn odd-btn">
+                        >>
+                    </button>
+                </a>
+                
             </div>
         </div>
 
     </section>
 
-    <section class="even-sec">
+    <section id="sec-2" class="even-sec">
         <div class="sec-cont">
             <div class="sec-img-cont">
                 <img src="images/img2.png" alt="champion brain">
             </div>
             <div class="sec-txt-cont">
-                <h3 class="sec-header">A propos de Nous !</h3>
+                <h3 class="sec-header">À propos de Nous !</h3>
                 <p class="sec-yap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quaerat doloribus ad dolores consequatur dolor hic, recusandae ducimus deserunt incidunt facere laborum cupiditate exercitationem quas, veritatis soluta nihil. Dolores, hic?</p>
-                <button class="arrow-btn even-btn">
-                    >>
-                </button>
+                
+                <a href="#sec-3">
+                    <button class="arrow-btn even-btn">
+                        >>
+                    </button>
+                </a>
+               
             </div>
     </section>
 
-    <section class="odd-sec">
+    <section class="odd-sec" id="sec-3">
         <div class="sec-cont">
             <div class="sec-img-cont">
                 <img src="images/img3.png" alt="champion brain" class="last-two">
@@ -107,26 +126,31 @@
     <footer>
             <img src="images/spongymedbrain-logo.png" alt="">
             <p id="copyright-txt">
-                Spongymedmind 2024-2025 © Tous droits réservés.
+                <span>Spongymedmind 2024-2025 © </span>Tous droits réservés.
             </p>
         <div id="socials">
             <div class="social">
-                <a href="">
+                <a href="https://www.instagram.com/spongymedbrain/">
                     <img src="images/icons/instagram.png" alt="">
                 </a>
             </div>
             <div class="social">
-                <a href="">
+                <a href="https://www.youtube.com/@SpongyMedbrain">
+                    <img src="images/icons/youtube.png" alt="">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.tiktok.com/@spongy.medbrain">
                     <img src="images/icons/tik-tok.png" alt="">
                 </a>
             </div>
             <div class="social">
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=61552071002741">
                     <img src="images/icons/facebook.png" alt="">
                 </a>
             </div>
             <div class="social">
-                <a href="">
+                <a href="https://t.me/spongymedbrain">
                     <img src="images/icons/telegram.png" alt="">
                 </a>
             </div>

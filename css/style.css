@@ -9,6 +9,10 @@
     --bg-green-subheader:#D0F3E6;
 }
 
+br {
+    display: inline;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -119,7 +123,11 @@ footer {
     align-items: center;
 }
 
-footer *:not(:first-child){
+footer > *:not(:first-child){
+    margin-left: 15px;
+}
+
+footer > #socials *:not(:first-child){
     margin-left: 15px;
 }
 
@@ -158,4 +166,171 @@ footer .social a {
 footer .social a img {
     max-width: 100%;
     max-height: 100%;
+}
+
+#nav-cta-btn {
+    padding: 0.65em 1.5em;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 300ms all ease-in-out;
+    background-color: var(--bg-green);
+}
+
+#nav-cta-btn:hover {
+    background-color: transparent;
+    color: var(--bg-green);
+    border: 3px solid var(--bg-green);
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    
+    header {
+        height: 75px;
+    }
+    .nav-item {
+        display: none;
+    }
+    #nav-cta-btn {
+        display: none;
+    }
+    .sidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: var(--bg-green); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 15px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+      }
+      
+      /* The sidebar links */
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      /* The button used to open the sidebar */
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: var(--bg-green);
+        color: var(--bg-pink);
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      
+      .openbtn:hover {
+        background-color: transparent;
+        color: var(--bg-green);
+        border: var(--bg-green) 1px solid;
+      }
+      
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+      }
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    footer {
+        height:75.5vh;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    footer > img {
+        width: 5em;
+        height: 5em;
+    }
+
+    #copyright-txt {
+        font-size: 16px;
+        line-height: 2em;
+    }
+
+    #copyright-txt span::after  {
+        content: "\a";
+        white-space: pre;
+    }
+
+    footer > *:not(:first-child) {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    footer #socials {
+        width: 75%;
+
+        
+    }
+
+    footer .social {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        padding: 0;
+    }
+
+    footer .social a {
+        height: 70%;
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width:450px) and (max-width : 768px) {
+    .sec-img-cont > img {
+        width: 35% !important;
+    }
+
+    .last-two {
+        width: 35% !important;
+    }
+
+    footer {
+        height: 82.5vh;
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width:1020px) and (max-width:1440px) {
+    .nav-item {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 1em;
+        height: 17.5vh;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    #mySidebar, #main {
+        display: none;
+    }
 }
